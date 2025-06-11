@@ -13,7 +13,7 @@ A linear non-gaussian acyclic model for causal discovery.
 Journal of Machine Learning Research, 7:2003-2030, 2006.
 }
 \section{Super class}{
-\code{\link[rlingam:LiNGAM]{rlingam::LiNGAM}} -> \code{ICALiNGAM}
+\code{rlingam::LiNGAM} -> \code{ICALiNGAM}
 }
 \section{Public fields}{
 \if{html}{\out{<div class="r6-fields">}}
@@ -25,24 +25,24 @@ Journal of Machine Learning Research, 7:2003-2030, 2006.
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{ICALiNGAM$new()}}
-\item \href{#method-fit}{\code{ICALiNGAM$fit()}}
-\item \href{#method-estimate_causal_order}{\code{ICALiNGAM$estimate_causal_order()}}
-\item \href{#method-search_causal_order}{\code{ICALiNGAM$search_causal_order()}}
-\item \href{#method-clone}{\code{ICALiNGAM$clone()}}
+\item \href{#method-ICALiNGAM-new}{\code{ICALiNGAM$new()}}
+\item \href{#method-ICALiNGAM-fit}{\code{ICALiNGAM$fit()}}
+\item \href{#method-ICALiNGAM-estimate_causal_order}{\code{ICALiNGAM$estimate_causal_order()}}
+\item \href{#method-ICALiNGAM-search_causal_order}{\code{ICALiNGAM$search_causal_order()}}
+\item \href{#method-ICALiNGAM-clone}{\code{ICALiNGAM$clone()}}
 }
 }
-\if{html}{
-\out{<details open ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="rlingam" data-topic="LiNGAM" data-id="estimate_adjacency_matrix">}\href{../../rlingam/html/LiNGAM.html#method-estimate_adjacency_matrix}{\code{rlingam::LiNGAM$estimate_adjacency_matrix()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="rlingam" data-topic="LiNGAM" data-id="predict_adaptive_lasso">}\href{../../rlingam/html/LiNGAM.html#method-predict_adaptive_lasso}{\code{rlingam::LiNGAM$predict_adaptive_lasso()}}\out{</span>}
-}
-\out{</details>}
-}
+\if{html}{\out{
+<details open><summary>Inherited methods</summary>
+<ul>
+<li><span class="pkg-link" data-pkg="rlingam" data-topic="LiNGAM" data-id="estimate_adjacency_matrix"><a href='../../rlingam/html/LiNGAM.html#method-LiNGAM-estimate_adjacency_matrix'><code>rlingam::LiNGAM$estimate_adjacency_matrix()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="rlingam" data-topic="LiNGAM" data-id="predict_adaptive_lasso"><a href='../../rlingam/html/LiNGAM.html#method-LiNGAM-predict_adaptive_lasso'><code>rlingam::LiNGAM$predict_adaptive_lasso()</code></a></span></li>
+</ul>
+</details>
+}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-ICALiNGAM-new"></a>}}
+\if{latex}{\out{\hypertarget{method-ICALiNGAM-new}{}}}
 \subsection{Method \code{new()}}{
 create ICALiNGAM object
 \subsection{Usage}{
@@ -62,8 +62,8 @@ create ICALiNGAM object
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-fit"></a>}}
-\if{latex}{\out{\hypertarget{method-fit}{}}}
+\if{html}{\out{<a id="method-ICALiNGAM-fit"></a>}}
+\if{latex}{\out{\hypertarget{method-ICALiNGAM-fit}{}}}
 \subsection{Method \code{fit()}}{
 fit DirectLiNGAM
 \subsection{Usage}{
@@ -80,8 +80,8 @@ Estimate causal order based on estimated adjacency matrix}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-estimate_causal_order"></a>}}
-\if{latex}{\out{\hypertarget{method-estimate_causal_order}{}}}
+\if{html}{\out{<a id="method-ICALiNGAM-estimate_causal_order"></a>}}
+\if{latex}{\out{\hypertarget{method-ICALiNGAM-estimate_causal_order}{}}}
 \subsection{Method \code{estimate_causal_order()}}{
 if B is not DAG, set small elements to zero until DAG is obtained
 \subsection{Usage}{
@@ -101,8 +101,8 @@ get causal order of estimated adjacency matrix
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-search_causal_order"></a>}}
-\if{latex}{\out{\hypertarget{method-search_causal_order}{}}}
+\if{html}{\out{<a id="method-ICALiNGAM-search_causal_order"></a>}}
+\if{latex}{\out{\hypertarget{method-ICALiNGAM-search_causal_order}{}}}
 \subsection{Method \code{search_causal_order()}}{
 if given matrix is not DAG, return NULL
 \subsection{Usage}{
@@ -121,8 +121,8 @@ vector of length(ncol(B)) or NULL
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-ICALiNGAM-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-ICALiNGAM-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

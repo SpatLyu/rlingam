@@ -29,16 +29,16 @@ This code is based on Python implementation:
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{BaseLiNGAM$new()}}
-\item \href{#method-fit}{\code{BaseLiNGAM$fit()}}
-\item \href{#method-estimate_adjacency_matrix}{\code{BaseLiNGAM$estimate_adjacency_matrix()}}
-\item \href{#method-predict_adaptive_lasso}{\code{BaseLiNGAM$predict_adaptive_lasso()}}
-\item \href{#method-clone}{\code{BaseLiNGAM$clone()}}
+\item \href{#method-LiNGAM-new}{\code{BaseLiNGAM$new()}}
+\item \href{#method-LiNGAM-fit}{\code{BaseLiNGAM$fit()}}
+\item \href{#method-LiNGAM-estimate_adjacency_matrix}{\code{BaseLiNGAM$estimate_adjacency_matrix()}}
+\item \href{#method-LiNGAM-predict_adaptive_lasso}{\code{BaseLiNGAM$predict_adaptive_lasso()}}
+\item \href{#method-LiNGAM-clone}{\code{BaseLiNGAM$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-LiNGAM-new"></a>}}
+\if{latex}{\out{\hypertarget{method-LiNGAM-new}{}}}
 \subsection{Method \code{new()}}{
 create lingam object
 \subsection{Usage}{
@@ -56,8 +56,8 @@ create lingam object
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-fit"></a>}}
-\if{latex}{\out{\hypertarget{method-fit}{}}}
+\if{html}{\out{<a id="method-LiNGAM-fit"></a>}}
+\if{latex}{\out{\hypertarget{method-LiNGAM-fit}{}}}
 \subsection{Method \code{fit()}}{
 subclasses should implement this method
 \subsection{Usage}{
@@ -73,8 +73,8 @@ subclasses should implement this method
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-estimate_adjacency_matrix"></a>}}
-\if{latex}{\out{\hypertarget{method-estimate_adjacency_matrix}{}}}
+\if{html}{\out{<a id="method-LiNGAM-estimate_adjacency_matrix"></a>}}
+\if{latex}{\out{\hypertarget{method-LiNGAM-estimate_adjacency_matrix}{}}}
 \subsection{Method \code{estimate_adjacency_matrix()}}{
 estimate adjacency matrix based on causal order
 \subsection{Usage}{
@@ -90,8 +90,8 @@ estimate adjacency matrix based on causal order
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-predict_adaptive_lasso"></a>}}
-\if{latex}{\out{\hypertarget{method-predict_adaptive_lasso}{}}}
+\if{html}{\out{<a id="method-LiNGAM-predict_adaptive_lasso"></a>}}
+\if{latex}{\out{\hypertarget{method-LiNGAM-predict_adaptive_lasso}{}}}
 \subsection{Method \code{predict_adaptive_lasso()}}{
 fit adaptice lasso
 \subsection{Usage}{
@@ -116,8 +116,8 @@ coef_ (numeric vector) estimated coefficients
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-LiNGAM-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-LiNGAM-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{
