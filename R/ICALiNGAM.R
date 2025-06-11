@@ -31,17 +31,17 @@ ICALiNGAM <- R6::R6Class("ICALiNGAM", inherit = BaseLiNGAM,
         fit = function(X) {
 
             # obtain unmixing matrix W_ica
-            ica <- fastICA(X,
-                           n.comp  = ncol(X),
-                           alg.typ = "parallel",
-                           maxit   = self$max_iter,
-                           fun     = "logcosh"
+            ica <- fastICA::fastICA(X,
+                                    n.comp  = ncol(X),
+                                    alg.typ = "parallel",
+                                    maxit   = self$max_iter,
+                                    fun     = "logcosh"
             )
             W_ica <- (ica$K %*% ica$W)
 
             # obtain permuted W_ica
             # note that W_ica is t(W_ica) of scipy's fastICA
-            linassign <- solve_LSAP(1 / abs(W_ica), maximum = FALSE)
+            linassign <- clue::solve_LSAP(1 / abs(W_ica), maximum = FALSE)
             col_index <- unname(linassign)
             PW_ica    <- t(W_ica[, col_index])
 

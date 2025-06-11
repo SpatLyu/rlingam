@@ -6,6 +6,7 @@
 #' This code is based on Python implementation:
 #'
 #' (The LiNGAM Project: https://sites.google.com/site/sshimizu06/lingam)
+#' @importFrom glmnet cv.glmnet
 #' @importFrom lars lars
 #' @export
 BaseLiNGAM <- R6::R6Class("LiNGAM",
