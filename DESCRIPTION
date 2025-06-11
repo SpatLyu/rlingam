@@ -16,4 +16,5 @@ Imports:
     DiagrammeR,
     glmnet,
     clue,
-    fastICA
+    fastICA,
+    stats
