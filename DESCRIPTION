@@ -9,9 +9,8 @@ Authors@R:
 Description: R implementation of LiNGAM algorithms based on Python implementation (The LiNGAM Project: https://sites.google.com/site/sshimizu06/lingam).
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.2
 Imports: 
     lars,
     DiagrammeR,
