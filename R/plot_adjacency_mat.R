@@ -27,7 +27,6 @@ plot_adjacency_mat <- function(adj_mat,
 
         }
     }
-    dot <- DiagrammeR::render_graph(graph, layout = "dot", title = title)
-    dot$x$diagram <- gsub("neato", "dot", dot$x$diagram)
-    print(DiagrammeR::grViz(dot$x$diagram))
+
+    DiagrammeR::render_graph(graph, layout = "neato", title = title)
 }
